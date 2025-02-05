@@ -1,6 +1,7 @@
 // JAK SLIDER JS START
 $('.jak-slider').slick({
     dots: false,
+    arrows:false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,

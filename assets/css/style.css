@@ -58,15 +58,15 @@ li {
 }
 .container {
 	width: 100%;
-	max-width: 1920px;
 	margin: 0 auto;
 }
 /* HEADER CSS START */
 header {
 	position: absolute;
-	top: 14px;
-	left: 14px;
-	width: 98.6%;
+    top: 14px;
+    left: 50%;
+    width: 98.6%;
+    transform: translateX(-50%);
 }
 header .header-outer {
 	display: flex;
@@ -105,7 +105,7 @@ header .header-outer .header-btn a:hover {
 }
 header .header-outer .header-logo {
 	width: 100%;
-	max-width: 20%;
+	max-width: 370px;
 }
 header .header-outer .header-logo a img {
 	width: 100%;
@@ -257,18 +257,152 @@ section.company-info .about-company p {
 
 /* SLIDER CSS START */
 section.jak-slides {
-	padding: 50px 0 50px;
+	padding: 96px 0;
+	/* overflow: hidden; */
 }
 section.jak-slides .jak-slider .jak-inner {
 	width: 100%;
-	max-width: 365px;
 	border-radius: 13px;
 	overflow: hidden;
+}
+section.jak-slides .jak-slider .slick-slide {
+	margin: 0 14px;
 }
 section.jak-slides .jak-slider .jak-inner img {
 	aspect-ratio: 2 / 3;
 	object-fit: cover;
 }
-section.jak-slides {
-}
 /* SLIDER CSS END */
+
+/* OUE SRVICE CSS START */
+section.our-services {
+	padding: 0 25.5px 56px;
+}
+section.our-services h2 {
+    font-family: "Alexandria", serif;
+    font-size: 108px;
+    font-weight: 600;
+    line-height: 98px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+section.our-services h2 span {
+	color: var(--blue-color);
+}
+section.our-services .service-outerwrap {
+	display: flex;
+	justify-content: space-between;
+}
+section.our-services .service-outerwrap .service-box {
+	width: 100%;
+	max-width: 32%;
+	padding: 16px;
+	background: var(--white);
+	border-radius: 12px;
+	/* border-top: 1px solid rgba(7, 142, 244, 0.45); */
+	position: relative;
+	box-shadow: 0px -2px 9px -5px rgba(0,85,150,1);
+-webkit-box-shadow: 0px -2px 9px -5px rgba(0,85,150,1);
+-moz-box-shadow: 0px -2px 9px -5px rgba(0,85,150,1);
+
+}
+section.our-services .service-outerwrap .service-box:after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: var(--blue-color);
+    left: 0px;
+    border-radius: 12px;
+    bottom: -5px;
+    z-index: -1;
+}
+section.our-services .service-outerwrap .service-box img {
+	width: 100%;
+}
+section.our-services .service-outerwrap .service-box h3 {
+	font-family: "Open Sans", serif;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 31.46px;
+	color: var(--blue-color);
+	margin-bottom: 16px;
+}
+section.our-services .service-outerwrap .service-box p {
+	font-family: "Open Sans", serif;
+	font-size: 16x;
+	font-weight: 400;
+	line-height: 24.96px;
+	color: var(--text-color);
+}
+/* OUE SRVICE CSS END */
+
+/* EXPLORE CSS START */
+section.explore {
+	padding: 0 0 56px;
+}
+section.explore .explore-outer{
+	display: flex;
+	justify-content: space-between;
+}
+section.explore .explore-outer .explore-img img {
+	border-radius: 12px;
+}
+section.explore .explore-outer .explore-img  {
+	width: 100%;
+    max-width: 66%;
+    border-radius: 12px;
+	position: relative;
+}
+section.explore .explore-outer .explore-img:after {
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: var(--blue-color);
+    left: 0px;
+    border-radius: 22px;
+    bottom: -5px;
+    z-index: -1;
+}
+section.explore .explore-outer .explore-data {
+    width: 100%;
+    max-width: 32%;
+    background-color: var(--blue-color);
+    border-radius: 12px;
+    padding: 12px 19px;
+}
+section.explore .explore-outer .explore-data h3 {
+	font-family: "Alexandria", serif;
+	font-size: 46px;
+	font-weight: 600;
+	line-height: 55.2px;
+	color: var(--white);
+	margin-bottom: 28px;
+}
+section.explore .explore-outer .explore-data p {
+	font-family: "Poppins", serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 33px;
+	color: var(--white);
+	margin-bottom: 217px;
+}
+section.explore .explore-outer .explore-data .explore-btn {
+	display: flex;
+	flex-direction: column;
+	gap:12px;
+}
+section.explore .explore-outer .explore-data .explore-btn a {
+	font-family: "Alexandria", serif;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 33.6px;
+	color: var(--blue-color);
+	background-color: var(--white);
+	border-radius: 12px;
+	padding: 11px;
+	text-align: center;
+}
+/* EXPLORE CSS END */
