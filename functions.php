@@ -176,3 +176,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+ 
+// FOOTER OPTION
+
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_page(
+		array(
+			'page_title' => 'Footer Option',
+			'menu_title' => 'Footer Option',
+			'menu_slug' => 'footer_option',
+			'capability' => 'edit_posts',
+			'icon_url' => 'dashicons-xing'
+		)
+	);
+}

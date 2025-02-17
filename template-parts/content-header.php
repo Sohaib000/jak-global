@@ -37,7 +37,7 @@
                     
                 </div>
                 <div class="header-btn">
-                    <a href="#">contact us</a>
+                    <a href="<?php echo the_field('header_button_link'); ?>"><?php echo the_field('header_button_text'); ?></a>
                 </div>
             </div>
         </div>
